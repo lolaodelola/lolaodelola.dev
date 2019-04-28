@@ -14,10 +14,6 @@ body {
   letter-spacing: .5px;
 }
 
-.secondary-bg {
-  background-color: #e2e2ff;
-}
-
 .logo{
   width: 30%;
 }
@@ -33,6 +29,10 @@ body {
   color: #fff;
 }
 
+.fw-500 {
+  font-weight: 500;
+}
+
 .btn-sec-local:hover, .btn-pri-local:hover {
   border: solid 2px #B7718C;
   color: #B7718C;
@@ -42,10 +42,6 @@ body {
 .row-mob {
   margin-right: auto !important;
   margin-left: auto !important;
-}
-
-.i {
-  color: #212529;
 }
 
 a {
