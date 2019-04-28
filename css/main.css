@@ -1,0 +1,58 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.heading-font {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+}
+
+.body-typography {
+  font-size: 1.7em;
+  line-height: 1.7em;
+  letter-spacing: .5px;
+}
+
+.secondary-bg {
+  background-color: #e2e2ff;
+}
+
+.logo{
+  width: 30%;
+}
+
+.btn-pri-local {
+  border: solid 2px #74235D;
+  color: #74235D;
+}
+
+.btn-sec-local {
+  border: solid 2px #74235D;
+  background-color: #74235D;
+  color: #fff;
+}
+
+.btn-sec-local:hover, .btn-pri-local:hover {
+  border: solid 2px #B7718C;
+  color: #B7718C;
+  background-color: #fff;
+}
+
+.row-mob {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.i {
+  color: #212529;
+}
+
+a {
+  color: #74235D;
+}
+
+a:hover {
+  color: #B7718C;
+  text-decoration: none;
+}
