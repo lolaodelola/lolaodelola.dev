@@ -52,3 +52,14 @@ a:hover {
   color: #B7718C;
   text-decoration: none;
 }
+
+.btn-disabled-local, .btn-disabled-local:hover {
+  border: solid 2px #808080;
+  color: #808080;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+.strike-through{
+  text-decoration: line-through;
+}
