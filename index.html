@@ -13,7 +13,7 @@
   <meta property="og:image" content="https://lolaodelola.dev/images/logo.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -28,8 +28,8 @@
     <section class="row row-mob">
 
       <ul class="col-md-12 nav justify-content-end pt-3">
-        <li class="nav-item"><a class="nav-link" href="https://lostinthesource.com" target="_blank">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://lostinthesource.com/podcast" target="_blank">Podcast</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://lostinthesource.com">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://lostinthesource.com/podcast">Podcast</a></li>
       </ul>
 
     </section>
@@ -43,15 +43,16 @@
               <img src="images/logo.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-md-6 d-flex flex-column justify-content-center">
-              <h1 class=" heading-font">Software Engineer & Professional Rubber Duck*</h1>
-              <p class="body-typography">I help people understand code through my blog and podcast, Lost in the source, <span class="strike-through">open office hours</span> and previously, <a href="https://blackgirl.tech" target="_blank">blackgirl.tech</a>.
+              <h1 class=" heading-font">Developer Advocate & Professional Rubber Duck*</h1>
+              <hr>
+              <p class="body-typography">I'm currently working with Samsung Internet to keep the web open and accessible through my <a href="https://medium.com/samsung-internet-dev">writing</a>, speaking and representing them on the <a href="https://opencollective.com/open-web-docs/updates/introducing-open-web-docs">Open Web Docs</a> Editorial Board and <a href="https://www.w3.org/community/privacycg/">W3C Privacy Community Group</a> with a focus on the Global Privacy Control.</p> <p class="body-typography">I also host a rubber duck open office hours, podcast, <a href="https://lostinthesource.com/podcast/">Lost in the Source</a>, and previously, <a href="https://blackgirl.tech">blackgirl.tech</a>.</p>
 
               <div class="row mx-n2">
                 <div class="col-md px-2">
-                  <div class="btn btn-lg w-100 mb-3 set-defaults btn-disabled-local disabled fw-500">👩🏽‍💻 Book Office Hours</div>
+                  <a class="btn btn-lg w-100 mb-3 set-defaults fw-500 btn-pri-local" href="https://calendly.com/lolaodelola/office-hours">👩🏽‍💻 Book Office Hours</a>
                 </div>
                 <div class="col-md px-2">
-                  <a class="btn btn-sec-local btn-lg w-100 mb-3 set-defaults fw-500" href="https://lostinthesource.com/podcast" target="_blank">🎙 Lost in the Source</a>
+                  <a class="btn btn-sec-local btn-lg w-100 mb-3 set-defaults fw-500" href="https://lostinthesource.com/podcast">🎙 Lost in the Source</a>
                 </div>
               </div>
               <p>* What is a <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">Rubber Duck</a>?</p>
@@ -67,15 +68,18 @@
     <section class="row row-mob mt-5">
       <footer class="d-flex flex-column col-md-12 pt-2">
         <ul class="list-unstyled list-inline text-center">
-          <li class="list-inline-item"><a href="https://lodelola.s3.eu-west-2.amazonaws.com/2020_resume.pdf" aria-label="cv/resume" target="_blank"><i class="fas fa-file-alt"></i></a></li>
+          <li class="list-inline-item"><a href="https://lodelola.s3.eu-west-2.amazonaws.com/2020_resume.pdf" aria-label="cv/resume"><i class="fas fa-file-alt"></i></a></li>
           <li class="list-inline-item"><a href="mailto:talkto@lolaodelola.dev"><i class="fas fa-envelope" aria-label="email"></i></a></li>
-          <li class="list-inline-item"><a href="https://github.com/lolaodelola" target="_blank"><i class="fab fa-github" aria-label="github account"></i></a></li>
-          <li class="list-inline-item"><a href="https://twitter.com/lolaodelola" target="_blank"><i class="fab fa-twitter" aria-label="twitter"></i></a></li>
+          <li class="list-inline-item"><a href="https://github.com/lolaodelola"><i class="fab fa-github" aria-label="github account"></i></a></li>
+          <li class="list-inline-item"><a href="https://twitter.com/lolaodelola"><i class="fab fa-twitter" aria-label="twitter"></i></a></li>
         </ul>
-        <p class=" text-center">Lola Odelola &copy; 2019</p>
+        <p class=" text-center">Lola Odelola &copy; <span id="year"></span></p>
       </footer>
     </section>
   </div>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
