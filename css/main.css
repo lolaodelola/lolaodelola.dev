@@ -1,3 +1,19 @@
+/* VARIABLES */
+
+:root {
+  /* BORDERS */
+  --stroke: solid 3px;
+
+  /* COLORS */
+  --light-bg: #FFFFFF;
+  --light-primary: #74235D;
+  --light-accent: #7426bf;
+  --light-disabled: #808080;
+}
+
+
+/* DEFAULT LIGHT THEME */
+
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -19,14 +35,14 @@ body {
 }
 
 .btn-pri-local {
-  border: solid 2px #74235D;
-  color: #74235D;
+  border: var(--stroke) var(--light-primary);
+  color: var(--light-primary);
 }
 
 .btn-sec-local {
-  border: solid 2px #74235D;
-  background-color: #74235D;
-  color: #fff;
+  border: var(--stroke) var(--light-primary);
+  background-color: var(--light-primary);
+  color: var(--light-bg);
 }
 
 .fw-500 {
@@ -34,9 +50,9 @@ body {
 }
 
 .btn-sec-local:hover, .btn-pri-local:hover {
-  border: solid 2px #B7718C;
-  color: #B7718C;
-  background-color: #fff;
+  border: var(--stroke) var(--light-accent);
+  color: var(--light-accent);
+  background-color: var(--light-bg);
 }
 
 .row-mob {
@@ -45,17 +61,17 @@ body {
 }
 
 a {
-  color: #74235D;
+  color: var(--light-primary);
 }
 
 a:hover {
-  color: #B7718C;
+  color: var(--light-accent);
   text-decoration: none;
 }
 
 .btn-disabled-local, .btn-disabled-local:hover {
-  border: solid 2px #808080;
-  color: #808080;
+  border: var(--stroke) var(--light-disabled);
+  color: var(--light-disabled);
   text-decoration: line-through;
   cursor: not-allowed;
 }
