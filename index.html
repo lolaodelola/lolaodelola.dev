@@ -14,7 +14,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
-  <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,500|Playfair+Display:400,700" rel="stylesheet">
@@ -22,13 +21,14 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="systemDarkPreference">
   <div class="container-fluid">
     <section class="row row-mob">
 
       <ul class="col-md-12 nav justify-content-end pt-3">
         <li class="nav-item"><a class="nav-link" href="https://lostinthesource.com">Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="https://lostinthesource.com/podcast">Podcast</a></li>
+        <li><button id="toggleTheme" class="btn btn-sm w-10 mb-3 set-defaults fw-500 btn-pri-local"></button></li>
       </ul>
 
     </section>
@@ -39,7 +39,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 d-flex flex-column justify-content-center">
-              <img src="images/logo.jpg" class="img-fluid" alt="">
+              <img src="images/logo.png" class="img-fluid" alt="logo for lola odelola">
             </div>
             <div class="col-md-6 d-flex flex-column justify-content-center">
               <h1 class=" heading-font">Developer Advocate & Professional Rubber Duck*</h1>
@@ -76,6 +76,7 @@
       </footer>
     </section>
   </div>
+  <script src="javascript/main.js"></script>
   <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
   </script>
