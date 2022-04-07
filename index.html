@@ -15,38 +15,32 @@
 
   <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,500|Playfair+Display:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/grid.css">
 </head>
 
 <body class="systemDarkPreference">
-  <div class="container-fluid">
-    <section class="row row-mob">
+  <nav>
+    <ul class="grid-item">
+      <li><a href="https://lostinthesource.com">Blog</a></li>
+      <li><a href="https://lostinthesource.com/podcast">Podcast</a></li>
+      <li><button id="toggleTheme" class="btn btn-sm  set-defaults  btn-pri-local"></button></li>
+    </ul>
+  </nav>
 
-      <ul class="col-md-12 nav justify-content-end pt-3">
-        <li class="nav-item"><a class="nav-link" href="https://lostinthesource.com">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://lostinthesource.com/podcast">Podcast</a></li>
-        <li><button id="toggleTheme" class="btn btn-sm w-10 mb-3 set-defaults fw-500 btn-pri-local"></button></li>
-      </ul>
+  <main class="" role="main">
+<!--    <div >-->
+      <img src="images/logo.png" class="gr-col-2" alt="logo for lola odelola">
+<!--    </div>-->
 
-    </section>
 
-    <section class="row row-mob">
-
-      <main class="set-defaults main" role="main">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 d-flex flex-column justify-content-center">
-              <img src="images/logo.png" class="img-fluid" alt="logo for lola odelola">
-            </div>
-            <div class="col-md-6 d-flex flex-column justify-content-center">
-              <h1 class=" heading-font">Developer Advocate & Professional Rubber Duck*</h1>
-              <hr>
-              <p class="body-typography">I'm currently working with Samsung Internet to keep the web open and accessible through my <a href="https://medium.com/samsung-internet-dev">writing</a>, <a href="https://www.youtube.com/watch?v=n5_2-nEqLbg&t=2s">speaking</a> and representing them on the <a href="https://opencollective.com/open-web-docs/updates/introducing-open-web-docs">Open Web Docs</a> steering commitee. I'm the co-chair of the W3C Developer Council. </p> <p class="body-typography">I host a rubber duck office hours, podcast,Lost in the Source, and previously, <a href="https://blackgirl.tech">blackgirl.tech</a>.</p>
-
-              <div class="row mx-n2">
+    <div class="gr-col-3">
+      <h1 class=" heading-font">Developer Advocate & Professional Rubber Duck*</h1>
+      <hr>
+      <p class="body-typography">I'm currently working with Samsung Internet to keep the web open and accessible through my <a href="https://medium.com/samsung-internet-dev">writing</a>, <a href="https://www.youtube.com/watch?v=n5_2-nEqLbg&t=2s">speaking</a> and representing them on the <a href="https://opencollective.com/open-web-docs/updates/introducing-open-web-docs">Open Web Docs</a> steering commitee. I'm the co-chair of the W3C Developer Council. </p> <p class="body-typography">I host a rubber duck office hours, podcast,Lost in the Source, and previously, <a href="https://blackgirl.tech">blackgirl.tech</a>.</p>
+      <div class="row mx-n2">
                 <div class="col-md px-2">
                   <a class="btn btn-lg w-100 mb-3 set-defaults fw-500 btn-pri-local" href="https://calendly.com/lolaodelola/office-hours">👩🏽‍💻 Book Office Hours</a>
                 </div>
@@ -54,15 +48,10 @@
                   <a class="btn btn-sec-local btn-lg w-100 mb-3 set-defaults fw-500" href="https://lostinthesource.com/podcast">🎙 Lost in the Source</a>
                 </div>
               </div>
-              <p>* What is a <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">Rubber Duck</a>?</p>
-            </div>
-          </div>
+      <p>* What is a <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">Rubber Duck</a>?</p>
+    </div>
+  </main>
 
-
-        </div>
-      </main>
-
-    </section>
 
     <section class="row row-mob mt-5">
       <footer class="d-flex flex-column col-md-12 pt-2">
@@ -75,7 +64,8 @@
         <p class=" text-center">Lola Odelola &copy; <span id="year"></span></p>
       </footer>
     </section>
-  </div>
+
+
   <script src="javascript/main.js"></script>
   <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();

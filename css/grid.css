@@ -1,0 +1,26 @@
+nav {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: column;
+    flex-direction: row-reverse;
+    column-gap: 2em;
+    list-style-type: none;
+}
+
+nav ul :nth-child(1){ order: 3; }
+nav ul :nth-child(2){ order: 2; }
+nav ul :nth-child(3){ order: 1; }
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(759px, 1fr));
+}
+
+img {
+    margin: auto;
+    /*max-width: 60%;*/
+}
