@@ -22,5 +22,11 @@ main {
 
 img {
     margin: auto;
-    /*max-width: 60%;*/
+}
+
+footer ul, footer p {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 1em;
 }
