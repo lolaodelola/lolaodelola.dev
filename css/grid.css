@@ -8,7 +8,7 @@ nav ul {
     flex-flow: column;
     flex-direction: row-reverse;
     column-gap: 2em;
-    list-style-type: none;
+    align-items: center;
 }
 
 nav ul :nth-child(1){ order: 3; }
@@ -20,13 +20,16 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(759px, 1fr));
 }
 
+main .about {
+    max-width: 85ch;
+}
+
 img {
     margin: auto;
 }
 
-footer ul, footer p {
+footer ul, footer small {
     display: flex;
-    list-style: none;
     justify-content: center;
     gap: 1em;
     padding: 0;

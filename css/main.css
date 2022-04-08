@@ -15,28 +15,7 @@
   --dark-accent: #B6E3C1;
 }
 
-
 /* DEFAULT LIGHT THEME */
-
-body {
-  font-family: 'Raleway', sans-serif;
-}
-
-.heading-font {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  letter-spacing: 0.9px;
-}
-
-.body-typography {
-  font-size: 1.5em;
-  line-height: 1.6em;
-  letter-spacing: .5px;
-}
-
-.logo{
-  width: 30%;
-}
 
 .btn-pri-local {
   border: var(--stroke) var(--light-primary);
@@ -49,19 +28,10 @@ body {
   color: var(--light-bg);
 }
 
-.fw-500 {
-  font-weight: 500;
-}
-
 .btn-sec-local:hover, .btn-pri-local:hover {
   border: var(--stroke) var(--light-accent);
   color: var(--light-accent);
   background-color: var(--light-bg);
-}
-
-.row-mob {
-  margin-right: auto !important;
-  margin-left: auto !important;
 }
 
 a {
@@ -70,7 +40,6 @@ a {
 
 a:hover {
   color: var(--light-accent);
-  text-decoration: none;
 }
 
 .btn-disabled-local, .btn-disabled-local:hover {
@@ -145,6 +114,5 @@ body.dark a:hover {
 
   body.systemDarkPreference a:hover {
     color: var(--dark-accent);
-    text-decoration: none;
   }
 }
