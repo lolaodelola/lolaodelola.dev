@@ -29,4 +29,5 @@ footer ul, footer p {
     list-style: none;
     justify-content: center;
     gap: 1em;
+    padding: 0;
 }
