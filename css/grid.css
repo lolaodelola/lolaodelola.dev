@@ -1,3 +1,8 @@
+/*
+    This file is for all things grid, positioning and spacing (margins, paddings, etc) of elements.
+*/
+
+
 body {
     /*
     Prevent header element being swallowed to the left on x-small mobile devices.
@@ -37,7 +42,7 @@ img {
 }
 
 .about {
-    max-width: 125ch;
+    max-width: 100ch;
 }
 
 .about ul {
@@ -47,6 +52,10 @@ img {
 .note {
     display: block;
 }
+
+.lg-btn { padding: 0.5rem 1rem; }
+
+.sm-btn { padding: 0.25rem 1rem; }
 
 footer ul, footer small {
     gap: 1em;

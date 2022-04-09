@@ -1,3 +1,7 @@
+/*
+  This file is to define the themes in dark and light mode.
+*/
+
 /* VARIABLES & RESETS */
 
 :root {
@@ -51,8 +55,6 @@ a:hover {
   text-decoration: line-through;
   cursor: not-allowed;
 }
-
-
 
 /* DEFAULT DARK THEME */
 body.dark {

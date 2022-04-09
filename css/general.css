@@ -1,3 +1,7 @@
+/*
+    This file is for miscellaneous rules (non-theming/non-grid)
+*/
+
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -30,12 +34,10 @@ nav, footer, .sm-btn, .note {
 }
 
 .sm-btn {
-    padding: 0.25rem 1rem;
     border-radius: 0.2rem;
 }
 
 .lg-btn {
-    padding: 0.5rem 1rem;
     border-radius: 0.3rem;
     font-size: clamp(1rem, 1.5rem, 2rem);
 }
