@@ -1,36 +1,53 @@
-nav {
-    display: grid;
-    grid-template-columns: 1fr;
+body {
+    /*
+    Prevent header element being swallowed to the left on x-small mobile devices.
+    196% * 320px.
+    */
+    min-width: 627.2px;
+    padding-left: 30px;
+}
+
+h1, ul, footer small {
+    display: flex;
+}
+
+h1, nav ul, footer ul, footer small {
+    justify-content: center;
+}
+
+ul {
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 nav ul {
-    display: flex;
-    flex-flow: column;
-    flex-direction: row-reverse;
-    column-gap: 2em;
+    flex-direction: row;
+    gap: 2em;
     align-items: center;
 }
 
-nav ul :nth-child(1){ order: 3; }
-nav ul :nth-child(2){ order: 2; }
-nav ul :nth-child(3){ order: 1; }
-
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(759px, 1fr));
-}
-
-main .about {
-    max-width: 85ch;
+    grid-template-columns: repeat(auto-fit, minmax(50ch, 1fr));
 }
 
 img {
     margin: auto;
+    max-width: clamp(30rem, 40vw, 800px);
+}
+
+.about {
+    max-width: 125ch;
+}
+
+.about ul {
+    gap: 2em;
+}
+
+.note {
+    display: block;
 }
 
 footer ul, footer small {
-    display: flex;
-    justify-content: center;
     gap: 1em;
-    padding: 0;
 }

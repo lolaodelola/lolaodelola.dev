@@ -1,0 +1,41 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(4rem, 3.5vw, 30rem);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-size: clamp(2rem, 1.3vw, 20rem);
+}
+
+nav, footer, .sm-btn, .note {
+    font-size: clamp(1.5rem, 1vw, 3.5rem);
+}
+
+.about {
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+.sm-btn {
+    padding: 0.25rem 1rem;
+    border-radius: 0.2rem;
+}
+
+.lg-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-size: clamp(1rem, 1.5rem, 2rem);
+}
