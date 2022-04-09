@@ -9,7 +9,7 @@ body {
     196% * 320px.
     */
     min-width: 627.2px;
-    padding-left: 30px;
+    padding: 0 30px;
 }
 
 h1, ul, footer small {
