@@ -1,19 +1,22 @@
-/* VARIABLES */
+/* VARIABLES & RESETS */
 
 :root {
   /* BORDERS */
   --stroke: solid 3px;
 
   /* COLORS */
-  --light-bg: #FFFFFF;
+  --white: #FFFFFF;
   --light-primary: #74235D;
   --light-accent: #7426bf;
   --light-disabled: #808080;
-  --dark-bg: #112A46;
+  --navy: #112A46;
   --dark-text: #ACC8E5;
   --dark-primary: #F7CCDC;
   --dark-accent: #B6E3C1;
+  --transparent: transparent;
 }
+
+button { background-color: var(--transparent); }
 
 /* DEFAULT LIGHT THEME */
 
@@ -25,13 +28,13 @@
 .btn-sec-local {
   border: var(--stroke) var(--light-primary);
   background-color: var(--light-primary);
-  color: var(--light-bg);
+  color: var(--white);
 }
 
 .btn-sec-local:hover, .btn-pri-local:hover {
   border: var(--stroke) var(--light-accent);
   color: var(--light-accent);
-  background-color: var(--light-bg);
+  background-color: var(--white);
 }
 
 a {
@@ -49,13 +52,11 @@ a:hover {
   cursor: not-allowed;
 }
 
-.strike-through{
-  text-decoration: line-through;
-}
+
 
 /* DEFAULT DARK THEME */
 body.dark {
-  background-color: var(--dark-bg);
+  background-color: var(--navy);
   color: var(--dark-text);
 }
 
@@ -67,12 +68,12 @@ body.dark .btn-pri-local {
 body.dark .btn-sec-local {
   border: var(--stroke) var(--dark-primary);
   background-color: var(--dark-primary);
-  color: var(--dark-bg);
+  color: var(--navy);
 }
 
 body.dark .btn-sec-local:hover, .btn-pri-local:hover {
   border: var(--stroke) var(--dark-accent);
-  background-color: var(--dark-bg);
+  background-color: var(--transparent);
   color: var(--dark-accent);
 }
 
@@ -87,7 +88,7 @@ body.dark a:hover {
 
 @media (prefers-color-scheme: dark) {
   body.systemDarkPreference {
-    background-color: var(--dark-bg);
+    background-color: var(--navy);
     color: var(--dark-text);
   }
 
@@ -99,12 +100,12 @@ body.dark a:hover {
   body.systemDarkPreference .btn-sec-local {
     border: var(--stroke) var(--dark-primary);
     background-color: var(--dark-primary);
-    color: var(--dark-bg);
+    color: var(--navy);
   }
 
   body.systemDarkPreference .btn-sec-local:hover, .btn-pri-local:hover {
     border: var(--stroke) var(--dark-accent);
-    background-color: var(--dark-bg);
+    background-color: var(--transparent);
     color: var(--dark-accent);
   }
 
