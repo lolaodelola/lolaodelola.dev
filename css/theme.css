@@ -1,42 +1,28 @@
-/* VARIABLES */
+/*
+  This file is to define the themes in dark and light mode.
+*/
+
+/* VARIABLES & RESETS */
 
 :root {
   /* BORDERS */
   --stroke: solid 3px;
 
   /* COLORS */
-  --light-bg: #FFFFFF;
+  --white: #FFFFFF;
   --light-primary: #74235D;
   --light-accent: #7426bf;
   --light-disabled: #808080;
-  --dark-bg: #112A46;
+  --navy: #112A46;
   --dark-text: #ACC8E5;
   --dark-primary: #F7CCDC;
   --dark-accent: #B6E3C1;
+  --transparent: transparent;
 }
 
+button { background-color: var(--transparent); }
 
 /* DEFAULT LIGHT THEME */
-
-body {
-  font-family: 'Raleway', sans-serif;
-}
-
-.heading-font {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  letter-spacing: 0.9px;
-}
-
-.body-typography {
-  font-size: 1.5em;
-  line-height: 1.6em;
-  letter-spacing: .5px;
-}
-
-.logo{
-  width: 30%;
-}
 
 .btn-pri-local {
   border: var(--stroke) var(--light-primary);
@@ -46,22 +32,13 @@ body {
 .btn-sec-local {
   border: var(--stroke) var(--light-primary);
   background-color: var(--light-primary);
-  color: var(--light-bg);
-}
-
-.fw-500 {
-  font-weight: 500;
+  color: var(--white);
 }
 
 .btn-sec-local:hover, .btn-pri-local:hover {
   border: var(--stroke) var(--light-accent);
   color: var(--light-accent);
-  background-color: var(--light-bg);
-}
-
-.row-mob {
-  margin-right: auto !important;
-  margin-left: auto !important;
+  background-color: var(--white);
 }
 
 a {
@@ -70,7 +47,6 @@ a {
 
 a:hover {
   color: var(--light-accent);
-  text-decoration: none;
 }
 
 .btn-disabled-local, .btn-disabled-local:hover {
@@ -80,13 +56,9 @@ a:hover {
   cursor: not-allowed;
 }
 
-.strike-through{
-  text-decoration: line-through;
-}
-
 /* DEFAULT DARK THEME */
 body.dark {
-  background-color: var(--dark-bg);
+  background-color: var(--navy);
   color: var(--dark-text);
 }
 
@@ -98,12 +70,12 @@ body.dark .btn-pri-local {
 body.dark .btn-sec-local {
   border: var(--stroke) var(--dark-primary);
   background-color: var(--dark-primary);
-  color: var(--dark-bg);
+  color: var(--navy);
 }
 
 body.dark .btn-sec-local:hover, .btn-pri-local:hover {
   border: var(--stroke) var(--dark-accent);
-  background-color: var(--dark-bg);
+  background-color: var(--transparent);
   color: var(--dark-accent);
 }
 
@@ -118,7 +90,7 @@ body.dark a:hover {
 
 @media (prefers-color-scheme: dark) {
   body.systemDarkPreference {
-    background-color: var(--dark-bg);
+    background-color: var(--navy);
     color: var(--dark-text);
   }
 
@@ -130,12 +102,12 @@ body.dark a:hover {
   body.systemDarkPreference .btn-sec-local {
     border: var(--stroke) var(--dark-primary);
     background-color: var(--dark-primary);
-    color: var(--dark-bg);
+    color: var(--navy);
   }
 
   body.systemDarkPreference .btn-sec-local:hover, .btn-pri-local:hover {
     border: var(--stroke) var(--dark-accent);
-    background-color: var(--dark-bg);
+    background-color: var(--transparent);
     color: var(--dark-accent);
   }
 
@@ -145,6 +117,5 @@ body.dark a:hover {
 
   body.systemDarkPreference a:hover {
     color: var(--dark-accent);
-    text-decoration: none;
   }
 }
