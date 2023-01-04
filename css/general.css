@@ -28,7 +28,7 @@ nav, footer, .sm-btn, .note {
     font-size: clamp(1.5rem, 1vw, 3.5rem);
 }
 
-.about {
+.about, .notice {
     letter-spacing: 1px;
     line-height: 1.8;
 }
