@@ -10,44 +10,41 @@ body {
     */
     min-width: 627.2px;
     padding: 0 30px;
+    max-width: 50%;
 }
 
-h1, ul, footer small {
-    display: flex;
-}
+/*footer small, #footerLinks {*/
+/*    display: flex;*/
+/*}*/
 
-h1, nav ul, footer ul, footer small {
-    justify-content: center;
-}
+/*h1, nav ul, footer small {*/
+/*    justify-content: center;*/
+/*}*/
 
-ul {
-    flex-wrap: wrap;
-    padding: 0;
-}
+/*ul {*/
+/*    flex-wrap: wrap;*/
+/*    padding: 0;*/
+/*}*/
 
-nav ul {
-    flex-direction: row;
-    gap: 2em;
-    align-items: center;
-}
+/*nav ul {*/
+/*    flex-direction: row;*/
+/*    gap: 2em;*/
+/*    align-items: center;*/
+/*}*/
 
 main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50ch, 1fr));
+    /*display: grid;*/
+    /*grid-template-columns: repeat(auto-fit, minmax(50ch, 1fr));*/
 }
 
-img {
-    margin: auto;
-    max-width: clamp(30rem, 40vw, 800px);
-}
+/*img {*/
+/*    margin: auto;*/
+/*    max-width: clamp(30rem, 40vw, 800px);*/
+/*}*/
 
-.about {
-    max-width: 100ch;
-}
-
-.about ul {
-    gap: 2em;
-}
+/*.about ul {*/
+/*    gap: 2em;*/
+/*}*/
 
 .note {
     display: block;
@@ -57,6 +54,9 @@ img {
 
 .sm-btn { padding: 0.25rem 1rem; }
 
-footer ul, footer small {
-    gap: 1em;
+footer ul {
+    gap: 0.5em;
+    padding-left: 0;
+    display: flex;
+    justify-content: start;
 }

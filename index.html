@@ -15,7 +15,7 @@
 
     <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500|Playfair+Display:400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;1,300&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/theme.css">
@@ -25,43 +25,42 @@
 
   <body class="systemDarkPreference">
     <header>
-      <h1>An Artist who Works in Tech</h1>
-      <nav>
-        <ul>
-<!--          <li><a href="https://lostinthesource.com">Blog</a></li>-->
-<!--          <li><a href="https://lostinthesource.com/podcast">Podcast</a></li>-->
-          <li><button id="toggleTheme" class="sm-btn btn-pri-local"></button></li>
-        </ul>
-      </nav>
+      <h1 id="title">My name is Lola Odelola, I’m a multidisciplinary artist and technologist.</h1>
     </header>
 
     <main>
-      <!--Grid cell 1 -->
-      <img src="images/logo.png" alt="logo for lola odelola">
-      <!-- Grid cell 2 -->
-      <div class="about">
+      <section id="about">
+          <p>
+              I'm interested in themes of privacy, surveillance and Black identities. I work with photography, collage
+              and moving image.
+          </p>
+          <p>I have 10 years of experience as a technologist, with a variety of roles from Software Engineer to Web
+              Platform Lead. I'm passionate about technology standards, web education, web accessibility and digital
+              privacy.
+          </p>
+      </section>
+        <section id="work">
+            <p>You can view my art portfolio and my technical CV below.</p>
+            <ul id="workList">
+                <li class="workLI">
+                    <h2><a href="https://lolaodelola.com/portfolio.pdf">Art Work</a></h2>
+                </li>
+                <li class="workLI">
+                    <h2><a href="https://docs.google.com/document/d/1i5EdSBc6DEJC3i6kXBU3csQkEekt0Fjy6JqLtCOXTlw/edit?usp=sharing">Technology</a></h2>
+                </li>
+            </ul>
 
-          <p>I'm currently working with <a href="https://bocoup.com/">Bocoup</a> to lead their Web Platform Program, with the goal of developing web standards that prioritise the care, safety and privacy of web users.</p> <p>I previously hosted open office hours, the Lost in the Source podcast, and ran <a href="https://blackgirl.tech">blackgirl.tech</a>. I've also been affliated with Open Web Docs, Samsung Internet, Heroku and <a href="https://lodelola.s3.eu-west-2.amazonaws.com/Lola_Odelola_CV_2022.pdf">more</a>.</p>
-<!--        <ul>-->
-<!--          <li><a class="lg-btn btn-pri-local" href="https://calendly.com/lolaodelola/office-hours">👩🏽‍💻 Book Office Hours</a></li>-->
-<!--          <li><a class="lg-btn btn-sec-local" href="https://lostinthesource.com/podcast">🎙 Lost in the Source</a></li>-->
-<!--        </ul>-->
-<!--        <small class="note">*What is a <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">Rubber Duck</a>?</small>-->
-      </div>
+        </section>
     </main>
 
     <footer>
-        <small class="notice">
-            My spare time is dedicated to art, so I won't be taking on tech work outside of my paid working hours.
-        </small>
-      <ul>
-        <li><a href="https://docs.google.com/document/d/1i5EdSBc6DEJC3i6kXBU3csQkEekt0Fjy6JqLtCOXTlw/edit?usp=sharing" aria-label="cv/resume"><i class="fas fa-file-alt"></i></a></li>
-        <li><a href="mailto:talkto@lolaodelola.dev"><i class="fas fa-envelope" aria-label="email"></i></a></li>
+      <ul id="footerLinks">
+          <li><a href="https://instagram.com/lolaodelola"><i class="fab fa-instagram" aria-label="instagram"></i></a></li>
         <li><a href="https://github.com/lolaodelola"><i class="fab fa-github" aria-label="github account"></i></a></li>
         <li><a href="https://twitter.com/lolaodelola"><i class="fab fa-twitter" aria-label="twitter"></i></a></li>
+          <li><a rel="me" href="https://mastodon.social/@lolaodelola"><i class="fab fa-mastodon" aria-label="mastadon"></i></a></li>
       </ul>
-      <small>Lola Odelola <span>&copy;</span><span id="year"></span></small>
-    
+        <small>Lola Odelola <span>&copy; </span><span id="year"></span></small>
     </footer>
 
     
@@ -72,7 +71,7 @@
     <!-- Cloudflare Web Analytics -->
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "59ea2132429c4bac9c6bb36272ab1178"}'></script>
     <!-- End Cloudflare Web Analytics -->
-    <a rel="me" href="https://mastodon.social/@lolaodelola">Mastodon</a>
+
   </body>
 
 </html>

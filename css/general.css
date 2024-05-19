@@ -3,12 +3,13 @@
 */
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Noto Serif", serif;
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: clamp(4rem, 3.5vw, 30rem);
 }
 
@@ -24,14 +25,14 @@ p {
     font-size: clamp(2rem, 1.3vw, 20rem);
 }
 
-nav, footer, .sm-btn, .note {
-    font-size: clamp(1.5rem, 1vw, 3.5rem);
-}
+/*nav, footer, .sm-btn, .note {*/
+/*    font-size: clamp(1.5rem, 1vw, 3.5rem);*/
+/*}*/
 
-.about, .notice {
-    letter-spacing: 1px;
-    line-height: 1.8;
-}
+/*#about, .notice {*/
+/*    !*letter-spacing: 1px;*!*/
+/*    !*line-height: 1.8;*!*/
+/*}*/
 
 .sm-btn {
     border-radius: 0.2rem;
@@ -41,4 +42,13 @@ nav, footer, .sm-btn, .note {
     border-radius: 0.3rem;
     font-size: clamp(1rem, 1.5rem, 2rem);
     font-weight: 500;
+}
+#workList {
+    padding-left: 0;
+}
+
+.workLI h2 {
+    font-size: clamp(4rem, 3.5vw, 30rem);
+    font-family: "Righteous", sans-serif;
+    letter-spacing: 3px;
 }

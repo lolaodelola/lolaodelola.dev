@@ -13,10 +13,10 @@
   --light-primary: #74235D;
   --light-accent: #7426bf;
   --light-disabled: #808080;
-  --navy: #112A46;
-  --dark-text: #ACC8E5;
-  --dark-primary: #F7CCDC;
-  --dark-accent: #B6E3C1;
+  --dark-bg: #0d0628;
+  --dark-text: #fca17d;
+  --dark-primary: #f9dbbd;
+  --dark-accent: #da627d;
   --transparent: transparent;
 }
 
@@ -58,7 +58,7 @@ a:hover {
 
 /* DEFAULT DARK THEME */
 body.dark {
-  background-color: var(--navy);
+  background-color: var(--dark-bg);
   color: var(--dark-text);
 }
 
@@ -70,7 +70,7 @@ body.dark .btn-pri-local {
 body.dark .btn-sec-local {
   border: var(--stroke) var(--dark-primary);
   background-color: var(--dark-primary);
-  color: var(--navy);
+  color: var(--dark-bg);
 }
 
 body.dark .btn-sec-local:hover, .btn-pri-local:hover {
@@ -102,7 +102,7 @@ body.dark a:hover {
   body.systemDarkPreference .btn-sec-local {
     border: var(--stroke) var(--dark-primary);
     background-color: var(--dark-primary);
-    color: var(--navy);
+    color: var(--dark-bg);
   }
 
   body.systemDarkPreference .btn-sec-local:hover, .btn-pri-local:hover {
