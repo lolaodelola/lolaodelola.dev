@@ -14,7 +14,7 @@
   --light-accent: #7426bf;
   --light-disabled: #808080;
   --dark-bg: #0d0628;
-  --dark-text: #fca17d;
+  --dark-text: #c4b8f4;
   --dark-primary: #f9dbbd;
   --dark-accent: #da627d;
   --transparent: transparent;
@@ -61,6 +61,10 @@ body.dark {
   background-color: var(--dark-bg);
   color: var(--dark-text);
 }
+
+/*body.dark h1 {*/
+/*  color: var(--h1)*/
+/*}*/
 
 body.dark .btn-pri-local {
   border: var(--stroke) var(--dark-primary);
