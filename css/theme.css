@@ -22,32 +22,6 @@
 
 button { background-color: var(--transparent); }
 
-/* DEFAULT LIGHT THEME */
-
-.btn-pri-local {
-  border: var(--stroke) var(--light-primary);
-  color: var(--light-primary);
-}
-
-.btn-sec-local {
-  border: var(--stroke) var(--light-primary);
-  background-color: var(--light-primary);
-  color: var(--white);
-}
-
-.btn-sec-local:hover, .btn-pri-local:hover {
-  border: var(--stroke) var(--light-accent);
-  color: var(--light-accent);
-  background-color: var(--white);
-}
-
-a {
-  color: var(--light-primary);
-}
-
-a:hover {
-  color: var(--light-accent);
-}
 
 .btn-disabled-local, .btn-disabled-local:hover {
   border: var(--stroke) var(--light-disabled);
@@ -57,7 +31,7 @@ a:hover {
 }
 
 /* DEFAULT DARK THEME */
-body.dark {
+body {
   background-color: var(--dark-bg);
   color: var(--dark-text);
 }
@@ -66,60 +40,60 @@ body.dark {
 /*  color: var(--h1)*/
 /*}*/
 
-body.dark .btn-pri-local {
+body .btn-pri-local {
   border: var(--stroke) var(--dark-primary);
   color: var(--dark-primary);
 }
 
-body.dark .btn-sec-local {
+body .btn-sec-local {
   border: var(--stroke) var(--dark-primary);
   background-color: var(--dark-primary);
   color: var(--dark-bg);
 }
 
-body.dark .btn-sec-local:hover, .btn-pri-local:hover {
+body .btn-sec-local:hover, .btn-pri-local:hover {
   border: var(--stroke) var(--dark-accent);
   background-color: var(--transparent);
   color: var(--dark-accent);
 }
 
-body.dark a {
+body a {
   color: var(--dark-primary);
 }
 
-body.dark a:hover {
+body a:hover {
   color: var(--dark-accent);
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  body.systemDarkPreference {
-    background-color: var(--navy);
-    color: var(--dark-text);
-  }
+/*@media (prefers-color-scheme: dark) {*/
+/*  body.systemDarkPreference {*/
+/*    background-color: var(--navy);*/
+/*    color: var(--dark-text);*/
+/*  }*/
 
-  body.systemDarkPreference .btn-pri-local {
-    border: var(--stroke) var(--dark-primary);
-    color: var(--dark-primary);
-  }
+/*  body.systemDarkPreference .btn-pri-local {*/
+/*    border: var(--stroke) var(--dark-primary);*/
+/*    color: var(--dark-primary);*/
+/*  }*/
 
-  body.systemDarkPreference .btn-sec-local {
-    border: var(--stroke) var(--dark-primary);
-    background-color: var(--dark-primary);
-    color: var(--dark-bg);
-  }
+/*  body.systemDarkPreference .btn-sec-local {*/
+/*    border: var(--stroke) var(--dark-primary);*/
+/*    background-color: var(--dark-primary);*/
+/*    color: var(--dark-bg);*/
+/*  }*/
 
-  body.systemDarkPreference .btn-sec-local:hover, .btn-pri-local:hover {
-    border: var(--stroke) var(--dark-accent);
-    background-color: var(--transparent);
-    color: var(--dark-accent);
-  }
+/*  body.systemDarkPreference .btn-sec-local:hover, .btn-pri-local:hover {*/
+/*    border: var(--stroke) var(--dark-accent);*/
+/*    background-color: var(--transparent);*/
+/*    color: var(--dark-accent);*/
+/*  }*/
 
-  body.systemDarkPreference a {
-    color: var(--dark-primary);
-  }
+/*  body.systemDarkPreference a {*/
+/*    color: var(--dark-primary);*/
+/*  }*/
 
-  body.systemDarkPreference a:hover {
-    color: var(--dark-accent);
-  }
-}
+/*  body.systemDarkPreference a:hover {*/
+/*    color: var(--dark-accent);*/
+/*  }*/
+/*}*/
