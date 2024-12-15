@@ -25,6 +25,12 @@ a:hover {
 
 .portfolio-img {
     max-width: 40vw;
+    @media (max-width: 425px) {
+        max-width: 200vw;
+    }
+    @media (min-width: 650px) and (max-width: 1250px) {
+        max-width: 80vw;
+    }
 }
 
 nav ul {
@@ -40,11 +46,11 @@ nav ul {
     flex-wrap: wrap;
     column-gap: 15rem;
     min-height: 80vh;
+    align-content: center;
 }
 .bio {
     max-width: 80ch;
     line-height: 2;
-    align-self: center;
 }
 
 /*body {*/
