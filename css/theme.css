@@ -3,7 +3,9 @@
 */
 
 /* VARIABLES & RESETS */
-
+body {
+  font-family: "Noto Sans", sans-serif;
+}
 :root {
   /* BORDERS */
   --stroke: solid 3px;
@@ -20,80 +22,15 @@
   --transparent: transparent;
 }
 
-button { background-color: var(--transparent); }
-
-
-.btn-disabled-local, .btn-disabled-local:hover {
-  border: var(--stroke) var(--light-disabled);
-  color: var(--light-disabled);
-  text-decoration: line-through;
-  cursor: not-allowed;
+.logo {
+  font-family: "Tilt Warp";
+  font-size: clamp(4rem, 3.5vw, 30rem);
+  font-size: 20rem;
+  margin: 0;
+  /*color: rgba(69,94,182,1);*/
+  color: #2C3849;
 }
 
-/* DEFAULT DARK THEME */
-body {
-  background-color: var(--dark-bg);
-  color: var(--dark-text);
+p {
+  color: #1F2F16;
 }
-
-/*body.dark h1 {*/
-/*  color: var(--h1)*/
-/*}*/
-
-body .btn-pri-local {
-  border: var(--stroke) var(--dark-primary);
-  color: var(--dark-primary);
-}
-
-body .btn-sec-local {
-  border: var(--stroke) var(--dark-primary);
-  background-color: var(--dark-primary);
-  color: var(--dark-bg);
-}
-
-body .btn-sec-local:hover, .btn-pri-local:hover {
-  border: var(--stroke) var(--dark-accent);
-  background-color: var(--transparent);
-  color: var(--dark-accent);
-}
-
-body a {
-  color: var(--dark-primary);
-}
-
-body a:hover {
-  color: var(--dark-accent);
-  text-decoration: none;
-}
-
-/*@media (prefers-color-scheme: dark) {*/
-/*  body.systemDarkPreference {*/
-/*    background-color: var(--navy);*/
-/*    color: var(--dark-text);*/
-/*  }*/
-
-/*  body.systemDarkPreference .btn-pri-local {*/
-/*    border: var(--stroke) var(--dark-primary);*/
-/*    color: var(--dark-primary);*/
-/*  }*/
-
-/*  body.systemDarkPreference .btn-sec-local {*/
-/*    border: var(--stroke) var(--dark-primary);*/
-/*    background-color: var(--dark-primary);*/
-/*    color: var(--dark-bg);*/
-/*  }*/
-
-/*  body.systemDarkPreference .btn-sec-local:hover, .btn-pri-local:hover {*/
-/*    border: var(--stroke) var(--dark-accent);*/
-/*    background-color: var(--transparent);*/
-/*    color: var(--dark-accent);*/
-/*  }*/
-
-/*  body.systemDarkPreference a {*/
-/*    color: var(--dark-primary);*/
-/*  }*/
-
-/*  body.systemDarkPreference a:hover {*/
-/*    color: var(--dark-accent);*/
-/*  }*/
-/*}*/
