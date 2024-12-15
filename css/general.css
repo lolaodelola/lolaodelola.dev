@@ -1,29 +1,74 @@
 /*
     This file is for miscellaneous rules (non-theming/non-grid)
 */
-
 body {
-    font-family: "Noto Serif", serif;
+    background-color: #d5cdbc50;
+    padding: 2rem;
 }
 
-h1 {
-    font-family: "Righteous", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: clamp(4rem, 3.5vw, 30rem);
-}
-
-ul {
-    list-style-type: none;
-}
-
-a, a:hover {
+a {
+    color: #AB209F;
     text-decoration: none;
 }
 
-p {
-    font-size: clamp(2rem, 1.3vw, 20rem);
+a:hover {
+    color: #2A6AFF;
+    text-decoration: underline;
 }
+
+.home-layout {
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: 5rem;
+    align-items: flex-end;
+}
+
+.portfolio-img {
+    max-width: 40vw;
+}
+
+nav ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    font-weight: bold;
+}
+
+.profile-layout {
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: 15rem;
+    min-height: 80vh;
+}
+.bio {
+    max-width: 80ch;
+    line-height: 2;
+    align-self: center;
+}
+
+/*body {*/
+/*    font-family: "Noto Serif", serif;*/
+/*}*/
+
+/*h1 {*/
+/*    font-family: "Righteous", sans-serif;*/
+/*    font-weight: 400;*/
+/*    font-style: normal;*/
+
+/*}*/
+
+/*ul {*/
+/*    list-style-type: none;*/
+/*}*/
+
+/*a, a:hover {*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*p {*/
+/*    font-size: clamp(2rem, 1.3vw, 20rem);*/
+/*}*/
 
 /*nav, footer, .sm-btn, .note {*/
 /*    font-size: clamp(1.5rem, 1vw, 3.5rem);*/
@@ -34,21 +79,21 @@ p {
 /*    !*line-height: 1.8;*!*/
 /*}*/
 
-.sm-btn {
-    border-radius: 0.2rem;
-}
+/*.sm-btn {*/
+/*    border-radius: 0.2rem;*/
+/*}*/
 
-.lg-btn {
-    border-radius: 0.3rem;
-    font-size: clamp(1rem, 1.5rem, 2rem);
-    font-weight: 500;
-}
-#workList {
-    padding-left: 0;
-}
+/*.lg-btn {*/
+/*    border-radius: 0.3rem;*/
+/*    font-size: clamp(1rem, 1.5rem, 2rem);*/
+/*    font-weight: 500;*/
+/*}*/
+/*#workList {*/
+/*    padding-left: 0;*/
+/*}*/
 
-.workLI h2 {
-    font-size: clamp(4rem, 3.5vw, 30rem);
-    font-family: "Righteous", sans-serif;
-    letter-spacing: 3px;
-}
+/*.workLI h2 {*/
+/*    font-size: clamp(4rem, 3.5vw, 30rem);*/
+/*    font-family: "Righteous", sans-serif;*/
+/*    letter-spacing: 3px;*/
+/*}*/
