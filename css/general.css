@@ -9,6 +9,7 @@ body {
 a {
     color: #AB209F;
     text-decoration: none;
+    font-weight: 600;
 }
 
 a:hover {
@@ -19,8 +20,9 @@ a:hover {
 .home-layout {
     display: inline-flex;
     flex-wrap: wrap;
-    column-gap: 5rem;
     align-items: flex-end;
+    min-width: 100vw;
+    justify-content: space-between;
 }
 
 .portfolio-img {
@@ -38,20 +40,65 @@ nav ul {
     flex-wrap: wrap;
     gap: 1rem;
     list-style: none;
-    font-weight: bold;
+}
+
+.nav-item {
+    font-weight: 800;
 }
 
 .profile-layout {
     display: inline-flex;
     flex-wrap: wrap;
-    column-gap: 15rem;
+    column-gap: 5rem;
     min-height: 80vh;
+    min-width: 100vw;
     align-content: center;
+    justify-content: center;
 }
 .bio {
-    max-width: 80ch;
+    max-width: 50ch;
     line-height: 2;
 }
+
+.profile-img {
+    max-width: 30vw;
+    @media (max-width: 425px) {
+        max-width: 200vw;
+    }
+    @media (min-width: 650px) and (max-width: 1250px) {
+        max-width: 80vw;
+    }
+}
+
+.gallery {
+    min-width: 100vw;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    row-gap: 5rem;
+    align-items: center;
+    margin-top: 5rem;
+
+}
+
+.gallery-img {
+    min-width: 40%;
+    max-width: 0;
+    object-fit: contain;
+    @media (max-width: 425px) {
+        max-width: 200vw;
+    }
+    @media (min-width: 650px) and (max-width: 1250px) {
+        max-width: 80vw;
+    }
+}
+
+/*.gallery > section {*/
+/*    display: inline-flex;*/
+/*    justify-content: space-between;*/
+/*    min-width: 100vw;*/
+/*    flex-wrap: wrap;*/
+/*}*/
 
 /*body {*/
 /*    font-family: "Noto Serif", serif;*/
