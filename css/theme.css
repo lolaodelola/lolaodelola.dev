@@ -34,3 +34,11 @@ body {
 p {
   color: #1F2F16;
 }
+
+.page-title {
+  font-family: "Tilt Warp";
+  margin: 0;
+  color: #2C3849;
+  padding-left: 2.5rem;
+  font-size: clamp(4rem, 3.5vw, 30rem);
+}
