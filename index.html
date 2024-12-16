@@ -32,14 +32,7 @@
   </head>
 
   <body class="systemDarkPreference">
-  <nav>
-    <ul>
-      <li><a href="/profile" class="nav-item">Profile</a></li>
-      <li><a href="/portraits" class="nav-item">Portraits</a></li>
-      <li><a href="/art-work" class="nav-item">Art</a></li>
-      <li><a href="https://lolaslab.co" class="nav-item">Tech Work</a></li>
-    </ul>
-  </nav>
+  {% include "partials/_nav.njk" %}
     <main class="home-layout">
       <header>
         <h1 class="logo">lola.</h1>
@@ -50,25 +43,7 @@
              alt="A very close up black and white portrait of Shubomi, he is looking slightly down into the camera.">
       </section>
     </main>
-
-
-
-<!--    <footer>-->
-<!--      <ul id="footerLinks">-->
-<!--          <li><a href="https://instagram.com/lolaodelola"><i class="fab fa-instagram" aria-label="instagram"></i></a></li>-->
-<!--        <li><a href="https://twitter.com/lolaodelola"><i class="fab fa-twitter" aria-label="twitter"></i></a></li>-->
-<!--      </ul>-->
-<!--        <small>Lola Odelola <span>&copy; </span><span id="year"></span></small>-->
-<!--    </footer>-->
-
-    
-    <script src="javascript/main.js"></script>
-    <script>
-      document.getElementById("year").innerHTML = new Date().getFullYear();
-    </script>
-    <!-- Cloudflare Web Analytics -->
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "59ea2132429c4bac9c6bb36272ab1178"}'></script>
-    <!-- End Cloudflare Web Analytics -->
+  {% include "partials/_foot.njk" %}
 
   </body>
 

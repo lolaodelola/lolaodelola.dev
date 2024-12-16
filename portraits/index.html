@@ -32,14 +32,7 @@
 
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/profile" class="nav-item">Profile</a></li>
-            <li><a href="/portraits" class="nav-item">Portraits</a></li>
-            <li><a href="/art-work" class="nav-item">Art</a></li>
-            <li><a href="https://lolaslab.co" class="nav-item">Tech Work</a></li>
-        </ul>
-    </nav>
+    {% include "partials/_nav.njk" %}
     <h1 class="page-title">Portraits</h1>
     <main class="gallery">
         <img class="gallery-img"
@@ -72,5 +65,6 @@
              alt="A close up of Esther's hands and neck. She's wearing a thin chain with a pendant in the shape of Africa, another longer chain with a gold seashell pendant. Her nails are long almond shape in a sky blue colour with 3d chrome designs">
 
     </main>
+    {% include "partials/_foot.njk" %}
 </body>
 </html>
