@@ -32,56 +32,31 @@
 </head>
 
 <body class="systemDarkPreference">
-<nav>
-    <ul>
-        <li><a href="/profile" class="nav-item">Profile</a></li>
-        <li><a href="/portraits" class="nav-item">Portraits</a></li>
-        <li><a href="/art-work" class="nav-item">Art</a></li>
-        <li><a href="https://lolaslab.co" class="nav-item">Tech Work</a></li>
-    </ul>
-</nav>
-<main class="profile-layout">
+    {% include "partials/_nav.njk" %}
+    <main class="profile-layout">
 
-    <section class="bio">
-        <p>Lola is a multidisciplinary artist and technologist. Lola’s art work incorporates multiple
-            mediums,
-            including photography and poetry. She has two published poetry books, <a href="https://www.waterstones.com/book/lost-and-found/damilola-odelola/9781908998729">’Lost and
-                Found’</a> and '#000000', the former of which was the Poetry Book Society's Autumn Pamphlet Choice in 2016.
-            She’s particularly interested in themes of privacy and the relationship between tech and nature.</p>
+        <section class="bio">
+            <p>Lola is a multidisciplinary artist and technologist. Lola’s art work incorporates multiple
+                mediums,
+                including photography and poetry. She has two published poetry books, <a href="https://www.waterstones.com/book/lost-and-found/damilola-odelola/9781908998729">’Lost and
+                    Found’</a> and '#000000', the former of which was the Poetry Book Society's Autumn Pamphlet Choice in 2016.
+                She’s particularly interested in themes of privacy and the relationship between tech and nature.</p>
 
-        <p>Lola has worked across a number of industries, in a number of different technical roles from
-            Software
-            Engineer to Web Platform Program Lead. She’s been involved with Web Standards, and is an invited expert
-            to the W3C's ARIA Working Group. She has also been recognised for her work with blackgirl.tech (2014 - 2019), a non-profit organisation encouraging more Black girls, women and non-binary ppl to learn coding.</p>
-        <p>This portrait was made by <a href="https://anselmebulue.com">Anselm Ebulue</a>.</p>
-    </section>
+            <p>Lola has worked across a number of industries, in a number of different technical roles from
+                Software
+                Engineer to Web Platform Program Lead. She’s been involved with Web Standards, and is an invited expert
+                to the W3C's ARIA Working Group. She has also been recognised for her work with blackgirl.tech (2014 - 2019), a non-profit organisation encouraging more Black girls, women and non-binary ppl to learn coding.</p>
+            <p>This portrait was made by <a href="https://anselmebulue.com">Anselm Ebulue</a>.</p>
+        </section>
 
 
 
-    <img class="profile-img"
-         src="https://res.cloudinary.com/dnp7rf0u9/image/upload/v1734340428/img20230202_19005820_kkimbj.jpg"
-         alt="A black and white portrait of lola odelola">
+        <img class="profile-img"
+             src="https://res.cloudinary.com/dnp7rf0u9/image/upload/v1734340428/img20230202_19005820_kkimbj.jpg"
+             alt="A black and white portrait of lola odelola">
 
-</main>
-
-
-
-<!--    <footer>-->
-<!--      <ul id="footerLinks">-->
-<!--          <li><a href="https://instagram.com/lolaodelola"><i class="fab fa-instagram" aria-label="instagram"></i></a></li>-->
-<!--        <li><a href="https://twitter.com/lolaodelola"><i class="fab fa-twitter" aria-label="twitter"></i></a></li>-->
-<!--      </ul>-->
-<!--        <small>Lola Odelola <span>&copy; </span><span id="year"></span></small>-->
-<!--    </footer>-->
-
-
-<script src="javascript/main.js"></script>
-<script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
-<!-- Cloudflare Web Analytics -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "59ea2132429c4bac9c6bb36272ab1178"}'></script>
-<!-- End Cloudflare Web Analytics -->
+    </main>
+    {% include "partials/_foot.njk" %}
 
 </body>
 

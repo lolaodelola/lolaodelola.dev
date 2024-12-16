@@ -35,11 +35,18 @@ a:hover {
     }
 }
 
-nav ul {
+nav ul, footer ul {
     display: inline-flex;
     flex-wrap: wrap;
     gap: 1rem;
     list-style: none;
+}
+
+footer {
+    display: inline-flex;
+    min-width: 60vw;
+    justify-content: space-evenly;;
+    align-items: center;
 }
 
 .nav-item {
