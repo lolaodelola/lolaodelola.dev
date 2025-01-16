@@ -4,23 +4,24 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Lola Odelola | Portraits</title>
-    <meta name="description"
-          content="Lola Odelola is a London-based multidisciplinary artist working with photography, collage and words.">
+    <title>Lola Odelola | {{ title }}</title>
+    <meta name="description" content="Lola Odelola is a London-based multidisciplinary artist working with photography,
+    collage and words.">
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://lolaodelola.com/{{ page.url }}" />
+    <meta name="og:description" content="{{ description }}">
+    {%- if (social_img) -%}
+        <meta property="og:image" content="{{ social_img }}" />
+        <meta property="og:image:alt" content="The title of the post against a colourful background" />
+    {%- endif -%}
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:creator" content="@lolaodelola"/>
     <meta name="x:card" content="summary"/>
     <meta name="x:creator" content="@lolaodelola"/>
-    <meta property="og:url" content="https://lolaodelola.dev"/>
-    <meta property="og:title" content="Lola Odelola"/>
-    <meta property="og:description"
-          content="Lola Odelola is a London-based multidisciplinary artist working with photography, collage and words." />
-    <meta property="og:image" content="https://lolaodelola.dev/images/logo.jpg" />
     <meta name="viewport" content="width=device-width">
 
     <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
-
-    <!--      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;1,300&family=Righteous&display=swap" rel="stylesheet">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tilt+Warp&display=swap" rel="stylesheet">
