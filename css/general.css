@@ -24,10 +24,6 @@ body {
 
 p {
     line-height: 2;
-    font-size: var(--step-0);
-    @media (min-width: 430px) {
-        font-size: var(--step--2);
-    }
 }
 
 a, .external-icon {
@@ -147,6 +143,13 @@ footer {
         }
     }
 
+    p {
+        font-size: var(--step-0);
+        @media (min-width: 430px) {
+            font-size: var(--step--2);
+        }
+    }
+
     .pull-out {
         justify-self: center;
         font-weight: 900;
@@ -159,6 +162,31 @@ footer {
         max-width: 80ch;
     }
 
+}
+
+.posts-list {
+    list-style: none;
+}
+
+.description {
+    max-width: 65ch;
+}
+
+.post-list-img {
+    max-width: 80vw;
+    object-fit: contain;
+    padding-right: 2rem;
+    @media (min-width: 430px) and (max-width: 1252px) {
+        max-width: 40vw;
+    }
+    @media (min-width: 1252px) {
+        max-width: 30vw;
+    }
+}
+
+.post-list-item-title {
+    font-family: 'Tilt Warp';
+    font-size: var(--step-2);
 }
 
 /*.gallery > section {*/
