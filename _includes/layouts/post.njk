@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Lola Odelola | Portraits</title>
+    <meta name="description"
+          content="Lola Odelola is a London-based multidisciplinary artist working with photography, collage and words.">
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:creator" content="@lolaodelola"/>
+    <meta name="x:card" content="summary"/>
+    <meta name="x:creator" content="@lolaodelola"/>
+    <meta property="og:url" content="https://lolaodelola.dev"/>
+    <meta property="og:title" content="Lola Odelola"/>
+    <meta property="og:description"
+          content="Lola Odelola is a London-based multidisciplinary artist working with photography, collage and words." />
+    <meta property="og:image" content="https://lolaodelola.dev/images/logo.jpg" />
+    <meta name="viewport" content="width=device-width">
+
+    <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+    <!--      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;1,300&family=Righteous&display=swap" rel="stylesheet">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/general.css?site=v2">
+    <link rel="stylesheet" href="/css/theme.css?site=v2">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+</head>
+<body>
+    {% include "partials/_nav.njk" %}
+    <main class="post-container">
+        {{ content | safe }}
+    </main>
+    {% include "partials/_foot.njk" %}

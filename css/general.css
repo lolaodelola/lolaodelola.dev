@@ -1,12 +1,36 @@
 /*
     This file is for miscellaneous rules (non-theming/non-grid)
 */
+
+/* @link https://utopia.fyi/type/calculator?c=320,25,1.2,2560,30,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+    --step--4: clamp(0.7535rem, 0.7515rem + 0.0103vw, 0.768rem);
+    --step--3: clamp(0.9042rem, 0.8963rem + 0.0398vw, 0.96rem);
+    --step--2: clamp(1.0851rem, 1.0687rem + 0.0821vw, 1.2rem);
+    --step--1: clamp(1.3021rem, 1.2738rem + 0.1414vw, 1.5rem);
+    --step-0: clamp(1.5625rem, 1.5179rem + 0.2232vw, 1.875rem);
+    --step-1: clamp(1.875rem, 1.808rem + 0.3348vw, 2.3438rem);
+    --step-2: clamp(2.25rem, 2.1529rem + 0.4855vw, 2.9297rem);
+    --step-3: clamp(2.7rem, 2.5626rem + 0.6872vw, 3.6621rem);
+    --step-4: clamp(3.24rem, 3.0489rem + 0.9555vw, 4.5776rem);
+    --step-5: clamp(3.888rem, 3.626rem + 1.31vw, 5.722rem);
+}
+
 body {
     background-color: #d5cdbc50;
     padding: 2rem;
 }
 
-a {
+p {
+    line-height: 2;
+    font-size: var(--step-0);
+    @media (min-width: 430px) {
+        font-size: var(--step--2);
+    }
+}
+
+a, .external-icon {
     color: #AB209F;
     text-decoration: none;
     font-weight: 600;
@@ -40,6 +64,7 @@ nav ul, footer ul {
     flex-wrap: wrap;
     gap: 1rem;
     list-style: none;
+    font-size: smaller;
 }
 
 footer {
@@ -100,6 +125,42 @@ footer {
     }
 }
 
+.post-container{
+    max-width: 80ch;
+    min-width: fit-content;
+    justify-self: center;
+    margin: auto;
+    padding-right: 2rem;
+    h1 {
+        justify-self: center;
+        font-weight: 900;
+    }
+
+    img {
+        max-width: 150vw;
+        object-fit: contain;
+        @media (min-width: 430px) and (max-width: 1252px) {
+            max-width: 100vw;
+        }
+        @media (min-width: 1252px) {
+            max-width: 50vw;
+        }
+    }
+
+    .pull-out {
+        justify-self: center;
+        font-weight: 900;
+        font-size: xx-large;
+        color: #0428a7d4;
+    }
+
+    @media (min-width: 1253px) {
+        min-width: auto;
+        max-width: 80ch;
+    }
+
+}
+
 /*.gallery > section {*/
 /*    display: inline-flex;*/
 /*    justify-content: space-between;*/
@@ -126,9 +187,7 @@ footer {
 /*    text-decoration: none;*/
 /*}*/
 
-/*p {*/
-/*    font-size: clamp(2rem, 1.3vw, 20rem);*/
-/*}*/
+
 
 /*nav, footer, .sm-btn, .note {*/
 /*    font-size: clamp(1.5rem, 1vw, 3.5rem);*/

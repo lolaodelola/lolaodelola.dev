@@ -1,0 +1,32 @@
+---
+layout:
+title: lola odelola - Blog
+heading: Blog
+pagination:
+    data: collections.posts
+    size: 5
+    alias: posts
+    reverse: true
+
+---
+
+<ul class="secondary-container">
+    {% for post in posts %}
+    <li class="li-element-spacing">
+        <h2>{{ post.data.title }}</h2>
+        <p class="note">{{ post.data.date | date: "%Y-%b-%d" }}</p>
+        <p id="description">{{ post.data.description }}</p>
+        <p class="permalink"><a href="">Continue
+            Reading</a></p>
+    </li>
+    {%- endfor -%}
+</ul>
+
+
+<nav aria-label="pagination">
+    <ul class="pagination-list">
+        {%- for pageEntry in pagination.pages %}
+        <li><a href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[ forloop.index0 ] %} aria-current="page"{% endif %}>Page {{ forloop.index }}</a></li>
+        {%- endfor %}
+    </ul>
+</nav>
